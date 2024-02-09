@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Fun</title>
+<style>
+  /* Additional styles for fun */
+  .flex-container {display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    z-index: 0; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+  .red { background: tomato; 
+    
+  }
+  .blue { background: dodgerblue; 
+    }
+
+  .green { background: mediumseagreen; 
+ 
+  }
+  .orange { background: orange; 
+    }
+
+  .purple { background: rebeccapurple; 
+    }
+
+    .box {
+        width: 100px; height: 100px; color:white; font-size: 2em;
+    }
+
+    .flex-item{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        margin: 10px; 
+    }
+
+    @media (min-width: 600px){
+        .box{
+            justify-content: row;
+            color: grey; 
+        }
+    }
+
+    @media (min-width: 900px){
+        .flex-container{
+            justify-content: center;
+        }
+
+        .flex-item{
+           color: purple;  
+        }
+    }
+
+    nav{
+        display: flex; 
+        background-color: #333;
+        color: white; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+     padding-left: 10px; ;
+      
+    }
+
+    a {
+        
+        color: white; 
+        text-decoration: none;
+        padding: 10px; 
+    }
+        
+    
+    ul {
+   display: flex; 
+   justify-content: row;
+   justify-content: space-between;
+  list-style-type: none;
+    }
+
+
+</style>
+
+</head>
+<body>
+    <header>
+        <nav><div class="logo">Logo</div>
+        <ul >
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+        </ul>
+        </nav>
+
+        <h1>FlexBox practice</h1>
+    </header>
+
+    <main>
+        <section class="flex-container" >
+            
+            <div class="flex-item red box">1</div>
+            <div class="flex-item blue box">1</div>
+            <div class="flex-item green box">1</div>
+            <div class="flex-item orange box">1</div>
+            <div class="flex-item purple box">1</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Do we need this?</p>
+    </footer>
+
+</body>
+
+</html>
